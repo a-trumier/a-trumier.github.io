@@ -1,84 +1,154 @@
 <!DOCTYPE html>
 
-<!-- Hey inspect element man! This is probably really bad but its --->
-<!-- handwritten in VIM, no AI. --->
-
 <html>
-
-    <style type="text/css">
-    html {
-        background-color: black;
-        color: white;
-        font-family: "Lucida Console", "Courier New", monospace;
-    }
-
-    .center {
-        margin: auto;
-        width: 50%;
-        border: 3px dotted white;
-        padding: 10px;
-    }
-
-    h1.heading {
-        text-align: center;
-    }
-    footer {
-        text-align: center;
-        padding: 3px;
-    }
-
-    </style> 
-
     <head>
-        <h1 class="heading">Alex Trumier Personal Website</h1>
-        <title>Alex Trumier</title>
-    </head>
+        <title>Alex Trumier Home Page</title>
+    </html>
 
-    <body>
-        <div class="center">
-        <h2>Introduction</h2>
+    <body style="padding: 100px;">
+        <h1 align=center>Alex Trumier Home Page</h1>
+
         <p>
-            Hey! I'm Alex Trumier, and this is my space to post my 
-            pet-projects, stupid codebases, and fun stuff that I like to do.
-            Typically my projects are for me to learn something, or test an
-            idea.
-        </p>
-        <q>Alex! Why does this website look so awful?</q>
-        <p>
-            Good question! I am a fan of usability, and if it looks good whilst
-            being usable, then so be it. But other than that, I don't care what
-            a thing looks like as long as it works. That's why this site looks
-            like it's straight from the 90s: CSS and HTML baby! Also, I despise
-            slow feeling things: React is simply slow. 
+        Hello! Welcome to my page, I typically just host stuff I'm passionate
+        about here. If you have problems please email me with issues so that I
+        can fix asap.
         </p>
 
-        <h2> Current Projects </h2>
-        <p>
-            My current, working projects are:
-        </p>
-        <ul>
-            <li>Easily Extendable Shell (EESH): <a href="eesh.html">about page</a></li>
-            <li>Scripts (I will NEVER stop automating!!1!): <a href="scripts.html">about page</a></li>
-        </ul>
-        <h2>Completed Projects:</h2>
-        <ul>
-            <li>EduScript: <a href="eduscript.html">about page</a> Going to add later</li> 
-        </ul>
+        <h2>Projects</h2>
 
-        <h2>Contact Information</h2>
+        <h3>Easily Extendible Shell (EESH)</h3>
         <p>
-            You can contact me at 
-            <a href="mailto:adtrumier@gmail.com">adtrumier@gmail.com</a>
-            regarding my repos, code, or other such things at any time. I am
-            usually quickest to respond at typical business hours, 
-            8:00 to 5:00 CST.
+        This was a passion project that I had written in the summer of 2024. It
+        was my first foray into systems level programming, and it was a super
+        interesting deep dive into writing programs <i>without abstractions.</i>
+        It was a ton fun and cool to work on. If I rewrote it now, I would change
+        a lot, but it was a good learning experience.
         </p>
-        </div>
+        <p>
+        Feel free to <a href="https://github.com/a-trumier/eesh">go to this link
+        </a> to have a look at the github page. 
+        </p>
+        
+        <h3>libalex</h3>
+
+        <p>
+        This was another systems level programming project, which was an 
+        expansion on EESH. This took my systems level programming to the next
+        level: it was an attempt to write a more or less stripped down version
+        of libc. <tt>-freestanding</tt>, <tt>-nostdlib</tt>, the whole nine 
+        yards. I'm continually working on this (when I have time!) and it is 
+        a really nice learning experience to deal with the basic problem of
+        "how do I work with something when I have nothing?"
+        </p>
+
+        Feel free to <a href="https://github.com/a-trumier/libalex">go to this link
+        </a> to have a look at the github page. 
+        </p>
+
+        <h3>auto_tmux</h3>
+
+        <p>
+        My editor of choice is primarily VIM. I have used Emacs in the past, as
+        well as VSCode, but something about the simplicity of VIM and the power
+        of some choice plugins makes me giddy (for more, see <a href="#editor">
+        this</a> for more info). VIM and tmux go hand in hand. auto_tmux is a 
+        project that you can simply source into your .bashrc and it will 
+        automatically connect a new terminal to it's own tmux server. If you 
+        close one terminal, and open another, it will connect to the previous
+        session. A very useful tool for myself, one that is on all my servers.
+        Feel free to play around with it 
+        <a href="https://github.com/a-trumier/auto_tmux">here</a>.
+        </p>
+
+        <h2 id>Personal Computing</h2>
+
+        <h3>OS</h3>
+        
+        <p>
+        I've fiddled around with a lot of operating systems. In particular, I've
+        used:
+        <dl>
+            <dt>Windows</dt>
+            <dd>XP, Vista, 7, 8, 10, and 11</dd>
+            <dt>Linux</dt>
+            <dd>Fedora, Ubuntu, Mint, and Arch</dd>
+            <dt>BSD</dt>
+            <dd>OpenBSD</dd>
+        </dl>
+        Everyone asks <q>Well, what is your favourite?</q>
+        To be honest, I really don't know. To be frank, it's easier to point out
+        which one I dislike the most.
+        </p>
+        <p>
+        Unsurprisingly, it's Windows. But it's not for the stupid reasons that
+        most people online spout. It's very simply that I want my machine to
+        <b><i>do what I want it to do.</i></b> I want this program gone? It 
+        should be gone immediately. I want a certain GUI element to look 
+        different? It should be that way quickly. This is why the 
+        non-proprietary UNIX-like OSes like BSD and Linux are great. They aren't
+        perfect by any means, but they are the best at my disposal.
+        </p>
+        <blockquote>But Alex! You don't have any Apple OSes on your
+        list! Should that be in consideration?</blockquote>
+        <p>
+        Sure! I would love to get my hands on one. Unfortunately, they are 
+        <i>really</i> expensive. So if the walled garden ever drops price, I
+        might be inclined to give it a try.
+        </p>
+        <h3 id="editor">Primary Editor</h3>
+        
+        <p>
+        As mentioned prior in this article, I use VIM primarily. I've used many
+        editors, such as VSCode, Kate, Emacs, even the best one of all:
+        </p>
+        <tt>
+        THE
+        SO-CALLED "VISUAL" EDITORS HAVE BEEN PLACED HERE BY ED TO TEMPT THE
+        FAITHLESS.  DO NOT GIVE IN!!!  THE MIGHTY ED HAS SPOKEN!!!
+        </tt>
+        <br>
+        <br>
+
+        <a href="https://cs.wellesley.edu/~cs249/Resources/ed_is_the_standard_text_editor.html">
+        Link here to the full email.
+        </a>
+
+        <p>
+        Nothing comes close in my mind to VIM with plugins. The simplicity,
+        the speed, absolutely no editor that I've used comes close. I will 
+        die on this hill: VIM or nothing.
+        </p>
+
+        <h2>Misc</h2>
+
+        <h3>Hockey</h3>
+        <p>
+        I'm a huge fan of the Vancouver Canucks. I've been a fan since 2010,
+        and suffered through the 2011 Playoffs. I've run an email list prior
+        when I had time on Canucks news. If you are interested, please email me.
+        </p>
+
+        <h3>"Alex! Why the hell does this website look terrible?"</h3>
+        <p>
+        My problem with a lot of modern websites is usually one of the 
+        following things (most likely a combination):
+        <ol>
+            <li>It takes too damn long to load</li>
+            <li>It looks like a designer had a field trip with the front
+            page</li>
+            <li>There is a million script tags that run before I even get
+            to look at the content</li>
+        </ol>
+        At the end of the day, a website needs to do <b>ONE THING</b>: show
+        information that is in a readable format. I feel this website does that:
+        if you don't think so, send me an email with a rant about why this is
+        bad.
+        </p>
     </body>
 
-    <footer>
-        <p>Author: Alex Trumier<br>
-        <a href="mailto:adtrumier@gmail.com">adtrumier@gmail.com</a></p>
+    <footer style="text-align: center;">
+        <p>Latest Revision: 25/09/11. Email me at adtrumier@protonmail.com </p>
     </footer>
 
 </html>
+
