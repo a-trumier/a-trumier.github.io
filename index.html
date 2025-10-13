@@ -11,8 +11,34 @@
         <p>
         Hello! Welcome to my page, I typically just host stuff I'm passionate
         about here. If you have problems please email me with issues so that I
-        can fix asap.
+        can fix asap. My email is found at the footer of this page.
         </p>
+
+        <h2>Quick Links</h2>
+
+        <ol>
+            <li><a href="mailto:adtrumier@gmail.com">My Email.</a>
+            If you prefer my email as plaintext, please use this:
+            <tt>atrumier@gmail.com</tt>
+            </li>
+            <li><a href="https://github.com/a-trumier">My Github page.</a> 
+                You can find all of my projects, past and present, hosted there,
+                as well as dumb stuff that I enjoy. More descriptions about my 
+                projects are below.
+            </li>
+            <li><a href="https://github.com/a-trumier/dotfiles">My Dotfiles.</a>
+                You can find my Linux dotfiles for configuration there. This is
+                mostly for me.
+            </li>
+            <li>
+                <a href="void_linux.html">Me, Myself, and Void Linux.</a> 
+                Mostly me rambling about Linux.
+            </li>
+            <li>
+                <a href="#why">My Opinions on Web Design.</a> aka, why this 
+                looks like a website from the early 2000s.
+            </li>
+        </ol>
 
         <h2>Projects</h2>
 
@@ -71,7 +97,7 @@
             <dt>Windows</dt>
             <dd>XP, Vista, 7, 8, 10, and 11</dd>
             <dt>Linux</dt>
-            <dd>Debian, Fedora, Ubuntu, Mint, and Arch</dd>
+            <dd>Debian, Fedora, Ubuntu, Mint, Arch, Void</dd>
             <dt>BSD</dt>
             <dd>OpenBSD, FreeBSD</dd>
         </dl>
@@ -95,13 +121,41 @@
         but no crazy problems like Arch or BSD. Just a simple computing 
         environment to get work done.
         </p>
+        <p>
+        However, I've seen the problems with systemd. It's useful for sure, but
+        a lot of bloat. So now I'm currently using Void Linux. It uses runit as
+        it's init system, and to set a systemd-like service, its a simple as
+        <ol>
+            <li>Set up a directory with run script in /etc/sv</li>
+            <li>Simply do <tt>ln -s /etc/sv/"service name" /var/service  </tt> 
+            </li>
+            <li>Done</li>
+        </ol>
+        You want to remove a service? Simply <tt>rm -rf /var/service/"service 
+            name"</tt>. Done.
+
+        </p>
+
+        <p>
+        In addition, you have the rv program that allows you to check status of
+        of services, stop and restart them, etc. Really exceptional design, 
+        super easy to use. Is it easier than systemd? I won't say. 
+        </p>
+
+        <p>
+        For more information on my use of void, please go to 
+        <a href="void_linux.html">this link</a>.
+        </p>
+
         <blockquote>But Alex! You don't have any Apple OSes on your
         list! Should that be in consideration?</blockquote>
+
         <p>
         Sure! I would love to get my hands on one. Unfortunately, they are 
         <i>really</i> expensive. So if the walled garden ever drops price, I
         might be inclined to give it a try.
         </p>
+
         <h3 id="editor">Primary Editor</h3>
         
         <p>
@@ -135,7 +189,7 @@
         when I had time on Canucks news. If you are interested, please email me.
         </p>
 
-        <h3>"Alex! Why the hell does this website look terrible?"</h3>
+        <h3 id="why">"Alex! Why the hell does this website look terrible?"</h3>
         <p>
         My problem with a lot of modern websites is usually one of the 
         following things (most likely a combination):
@@ -154,7 +208,7 @@
     </body>
 
     <footer style="text-align: center;">
-        <p>Latest Revision: 25/09/23. Email me at adtrumier@protonmail.com </p>
+        <p>Latest Revision: 25/09/23. Email me at adtrumier@gmail.com </p>
     </footer>
 
 </html>
