@@ -16,7 +16,7 @@
               <div class="nav-links">
                 <a href="index.html" class="active">Homepage</a>
                 <a href="projects.html">Projects</a>
-                <a href="philosophy.html">Philosophy</a>
+                <a href="philosophy.html">Philosophy / Computing Preferences</a>
                 <a href="setup.html">Setup</a>
                 <a href="resources.html">Resources</a>
                 <a href="contact.html">Contact</a>
@@ -41,12 +41,13 @@
             past and present, plus things I enjoy.
           </li>
           <li><a href="https://github.com/a-trumier/dotfiles">My Dotfiles</a> — Linux configuration I use daily.</li>
-          <li><a href="void_linux.html">Me, Myself, and Void Linux</a> — mostly me rambling about Linux.</li>
-          <li><a href="#why">My Opinions on Web Design</a> — why this looks intentionally simple.</li>
+          <li><a href="philosophy.html">My Opinions</a> — why this looks intentionally simple.</li>
         </ol>
 
 
         <h2>Projects</h2>
+        <p>NOTE: This is an overview: for more information (and more projects), 
+            go to the "Projects" section.</p>
 
         <h3>Easily Extendible Shell (EESH)</h3>
         <p>
@@ -92,151 +93,9 @@
         <a href="https://github.com/a-trumier/auto_tmux">here</a>.
         </p>
 
-        <h2>Computing Philosophy</h2>
-        <p>
-          I value simplicity, transparency, and control over my tools.
-          I prefer systems that expose their internals rather than hide them.
-          Abstractions are useful — until they aren't. When they get in the way,
-          I’d rather remove them than fight them.
-        </p>
-        <p>
-          My goal isn’t to reinvent the wheel, just to understand how it works
-          and more importantly: why it was made the way it is?
-        </p>
-
-
-        <h2 id>Personal Computing</h2>
-        <h3>Current Setup</h3>
-        <dl>
-          <dt>Main OS</dt><dd>Debian. The king!</dd>
-          <dt>Primary Editor</dt><dd>Vim</dd>
-          <dt>Shell</dt><dd>zsh with minimal prompt</dd>
-          <dt>Hardware</dt><dd>ASUS Vivobook 14 + home server running Debian</dd>
-        </dl>
-
-
-        <h3>OS</h3>
-        
-        <p>
-        I've fiddled around with a lot of operating systems. In particular, I've
-        used:
-        <dl>
-            <dt>Windows</dt>
-            <dd>XP, Vista, 7, 8, 10, and 11</dd>
-            <dt>Linux</dt>
-            <dd>Debian, Fedora, Ubuntu, Mint, Arch, Void</dd>
-            <dt>BSD</dt>
-            <dd>OpenBSD, FreeBSD</dd>
-        </dl>
-        Everyone asks <q>Well, what is your favourite?</q>
-        To be honest, I really don't know. To be frank, it's easier to point out
-        which one I dislike the most.
-        </p>
-        <p>
-        Unsurprisingly, it's Windows. But it's not for the stupid reasons that
-        most people online spout. It's very simply that I want my machine to
-        <b><i>do what I want it to do.</i></b> I want this program gone? It 
-        should be gone immediately. I want a certain GUI element to look 
-        different? It should be that way quickly. This is why the 
-        non-proprietary UNIX-like OSes like BSD and Linux are great. They aren't
-        perfect by any means, but they are the best at my disposal.
-        </p>
-        <p>
-        As for my favourite OS, it probably has to be Debian. I know, it's a 
-        little cliche, but man it does the trick. When I install Debian, I know
-        exactly what I'm getting. No extranous packages like Mint or Ubuntu,
-        but no crazy problems like Arch or BSD. Just a simple computing 
-        environment to get work done.
-        </p>
-        <p>
-        However, I've seen the problems with systemd. It's useful for sure, but
-        a lot of bloat. So I've fiddled in the past with Void Linux. It uses runit as
-        it's init system, and to set a systemd-like service, its a simple as
-        <ol>
-            <li>Set up a directory with run script in /etc/sv</li>
-            <li>Simply do <tt>ln -s /etc/sv/"service name" /var/service  </tt> 
-            </li>
-            <li>Done</li>
-        </ol>
-        You want to remove a service? Simply <tt>rm -rf /var/service/"service 
-            name"</tt>. Done.
-
-        </p>
-
-        <p>
-        In addition, you have the rv program that allows you to check status of
-        of services, stop and restart them, etc. Really exceptional design, 
-        super easy to use. Is it easier than systemd? I won't say. 
-        </p>
-
-        <p>
-        For more information on my use of void, please go to 
-        <a href="void_linux.html">this link</a>.
-        </p>
-
-        <blockquote>But Alex! You don't have any Apple OSes on your
-        list! Should that be in consideration?</blockquote>
-
-        <p>
-        Sure! I would love to get my hands on one. Unfortunately, they are 
-        <i>really</i> expensive. So if the walled garden ever drops price, I
-        might be inclined to give it a try.
-        </p>
-
-        <h3 id="editor">Primary Editor</h3>
-        
-        <p>
-        As mentioned prior in this article, I use VIM primarily. I've used many
-        editors, such as VSCode, Kate, Emacs, even the best one of all:
-        </p>
-        <tt>
-        THE
-        SO-CALLED "VISUAL" EDITORS HAVE BEEN PLACED HERE BY ED TO TEMPT THE
-        FAITHLESS.  DO NOT GIVE IN!!!  THE MIGHTY ED HAS SPOKEN!!!
-        </tt>
-        <br>
-        <br>
-
-        <a href="https://cs.wellesley.edu/~cs249/Resources/ed_is_the_standard_text_editor.html">
-        Link here to the full email.
-        </a>
-
-        <p>
-        Nothing comes close in my mind to VIM with plugins. The simplicity,
-        the speed, absolutely no editor that I've used comes close. I will 
-        die on this hill: VIM or nothing.
-        </p>
-
-        <h2>Misc</h2>
-
-        <h3>Hockey</h3>
-        <p>
-        I'm a huge fan of the Vancouver Canucks. I've been a fan since 2010,
-        and suffered through the 2011 Playoffs. I've run an email list prior
-        when I had time on Canucks news. If you are interested, please email me.
-        </p>
-
-        <h3 id="why">"Alex! Why the hell does this website look terrible?"</h3>
-        <p>
-        My problem with a lot of modern websites is usually one of the 
-        following things (most likely a combination):
-        <ol>
-            <li>It takes too damn long to load</li>
-            <li>It looks like a designer had a field trip with the front
-            page</li>
-            <li>There is a million script tags that run before I even get
-            to look at the content</li>
-        </ol>
-        At the end of the day, a website needs to do <b>ONE THING</b>: show
-        information that is in a readable format. I feel this website does that:
-        if you don't think so, send me an email with a rant about why this is
-        bad.
-        </p>
-    </body>
-
     <footer style="text-align: center;">
         <p>Latest Revision: 2025-10-29. Email me at adtrumier@gmail.com </p>
-        <p>Built with plain HTML and a text editor — no frameworks, no nonsense.</p>
+        <p>Built with plain HTML and a text editor. No frameworks, no nonsense.</p>
     </footer>
 
 </html>
