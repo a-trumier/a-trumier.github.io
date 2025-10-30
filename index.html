@@ -2,45 +2,49 @@
 
 <html>
     <head>
+        <meta charset="UTF-8">
         <title>Alex Trumier Home Page</title>
-    </html>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
 
     <body style="padding: 100px;">
-        <h1 align=center>Alex Trumier Home Page</h1>
+        <header>
+            <h1>Alex Trumier</h1>
+            <nav>
+              <br>
+              <div class="nav-links">
+                <a href="index.html" class="active">Homepage</a>
+                <a href="projects.html">Projects</a>
+                <a href="philosophy.html">Philosophy</a>
+                <a href="setup.html">Setup</a>
+                <a href="resources.html">Resources</a>
+                <a href="contact.html">Contact</a>
+                <a href="status.txt">Status</a>
+              </div>
+            </nav>
+            <p class="tagline">System Administration • UNIX • Minimal Computing</p>
+        </header>
 
         <p>
         Hello! Welcome to my page, I typically just host stuff I'm passionate
         about here. If you have problems please email me with issues so that I
-        can fix asap. My email is found at the footer of this page.
+        can fix asap.
         </p>
 
         <h2>Quick Links</h2>
-
         <ol>
-            <li><a href="mailto:adtrumier@gmail.com">My Email.</a>
-            If you prefer my email as plaintext, please use this:
-            <tt>atrumier@gmail.com</tt>. If you want to send me an encrypted
-            email, here is my PGP public key: <tt><a href="adt.pub.txt">adt.pub
-                </a></tt>
-            </li>
-            <li><a href="https://github.com/a-trumier">My Github page.</a> 
-                You can find all of my projects, past and present, hosted there,
-                as well as dumb stuff that I enjoy. More descriptions about my 
-                projects are below.
-            </li>
-            <li><a href="https://github.com/a-trumier/dotfiles">My Dotfiles.</a>
-                You can find my Linux dotfiles for configuration there. This is
-                mostly for me.
-            </li>
-            <li>
-                <a href="void_linux.html">Me, Myself, and Void Linux.</a> 
-                Mostly me rambling about Linux.
-            </li>
-            <li>
-                <a href="#why">My Opinions on Web Design.</a> aka, why this 
-                looks like a website from the early 2000s.
-            </li>
+          <li><a href="mailto:adtrumier@gmail.com">My Email</a>.
+            In plaintext: <tt>adtrumier@gmail.com</tt>.
+          </li>
+          <li><a href="https://github.com/a-trumier">My Github page</a> — all of my projects,
+            past and present, plus things I enjoy.
+          </li>
+          <li><a href="https://github.com/a-trumier/dotfiles">My Dotfiles</a> — Linux configuration I use daily.</li>
+          <li><a href="void_linux.html">Me, Myself, and Void Linux</a> — mostly me rambling about Linux.</li>
+          <li><a href="#why">My Opinions on Web Design</a> — why this looks intentionally simple.</li>
         </ol>
+
 
         <h2>Projects</h2>
 
@@ -88,7 +92,28 @@
         <a href="https://github.com/a-trumier/auto_tmux">here</a>.
         </p>
 
+        <h2>Computing Philosophy</h2>
+        <p>
+          I value simplicity, transparency, and control over my tools.
+          I prefer systems that expose their internals rather than hide them.
+          Abstractions are useful — until they aren't. When they get in the way,
+          I’d rather remove them than fight them.
+        </p>
+        <p>
+          My goal isn’t to reinvent the wheel, just to understand how it works
+          and more importantly: why it was made the way it is?
+        </p>
+
+
         <h2 id>Personal Computing</h2>
+        <h3>Current Setup</h3>
+        <dl>
+          <dt>Main OS</dt><dd>Debian. The king!</dd>
+          <dt>Primary Editor</dt><dd>Vim</dd>
+          <dt>Shell</dt><dd>zsh with minimal prompt</dd>
+          <dt>Hardware</dt><dd>ASUS Vivobook 14 + home server running Debian</dd>
+        </dl>
+
 
         <h3>OS</h3>
         
@@ -125,7 +150,7 @@
         </p>
         <p>
         However, I've seen the problems with systemd. It's useful for sure, but
-        a lot of bloat. So now I'm currently using Void Linux. It uses runit as
+        a lot of bloat. So I've fiddled in the past with Void Linux. It uses runit as
         it's init system, and to set a systemd-like service, its a simple as
         <ol>
             <li>Set up a directory with run script in /etc/sv</li>
@@ -210,7 +235,8 @@
     </body>
 
     <footer style="text-align: center;">
-        <p>Latest Revision: 25/09/23. Email me at adtrumier@gmail.com </p>
+        <p>Latest Revision: 2025-10-29. Email me at adtrumier@gmail.com </p>
+        <p>Built with plain HTML and a text editor — no frameworks, no nonsense.</p>
     </footer>
 
 </html>
